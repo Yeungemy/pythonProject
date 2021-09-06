@@ -1,3 +1,6 @@
+# list learning: append, sort, reverse have no return value
+# pop (index): have return value
+
 import random
 
 

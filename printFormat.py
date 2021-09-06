@@ -37,4 +37,7 @@ result = 10000/23
 print('The result was {r:1.3f}'.format(r = result)) # The result was 434.783
 
 name = 'Jose'
-print(f'Hello, my name is {name}') # f_string 
+print(f'Hello, my name is {name}') # f_string: Hello, my name is Jose
+
+list = ['a','b','c'][1:]
+print(f'{list}') # ['b', 'c']
