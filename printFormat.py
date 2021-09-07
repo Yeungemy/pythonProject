@@ -64,6 +64,18 @@ print(f'\n{content}')
 #close the file
 myfile.close()
 
-
 with open('myfile.txt') as my_file:
     content = my_file.readlines()
+    print(f'\n{content}')
+
+with open('myfile.txt', mode = 'a') as f:
+    f.write('\nNew line added on')
+
+with open('myfile.txt', mode = 'r') as f:
+    print(f.read())
+
+with open('myfileNew.txt', mode = 'w') as f:
+    f.write('This is my new file')
+
+with open('myfileNew.txt', mode = 'r') as f:
+    print(f.read())
