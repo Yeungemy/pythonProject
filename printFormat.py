@@ -12,6 +12,9 @@ print(my_string[:4]) # tink
 # slice characters by step 3
 print(my_string[::3]) # tk
 
+# reverse the string
+print(my_string[::-1])
+
 print(my_string * 10) # tinkertinkertinkertinkertinkertinkertinkertinkertinkertinker
 
 print('2' + '3') # 23
@@ -41,3 +44,26 @@ print(f'Hello, my name is {name}') # f_string: Hello, my name is Jose
 
 list = ['a','b','c'][1:]
 print(f'{list}') # ['b', 'c']
+
+myfile = open('myfile.txt')
+content = myfile.read()
+print(f'\n{content}')
+
+myfile.seek(0)
+
+myfile = open('myfile.txt')
+content = myfile.readlines()
+print(f'\n{content}')
+
+myfile.seek(0)
+
+myfile = open('myfile.txt')
+content = myfile.readline()
+print(f'\n{content}')
+
+#close the file
+myfile.close()
+
+
+with open('myfile.txt') as my_file:
+    content = my_file.readlines()
